@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/de-beirute-a-parmegiana-conheca-as-comidas-tipicas-do-interior-de-sp.jpg" class="d-block w-100" alt="Foto 1" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Macarrao.webp" class="d-block w-100" alt="Foto 2" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imghdfhdh.png" class="d-block w-100" alt="Foto 3" style="height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Restaurante Sabor & Arte</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Alguns Pratos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#cardapio">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contate-nos</a></li>
+                </ul>
+                <button class="btn btn-light me-2">Login</button>
+                <button class="btn btn-light">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="sobre" class="container py-5">
+        <h2 class="text-danger">Sobre Nós</h2>
+        <p>Bem-vindo ao Restaurante Sabor & Arte, onde tradição e inovação se encontram para criar experiências gastronômicas inesquecíveis. Nossa equipe dedicada utiliza ingredientes frescos e de alta qualidade para oferecer pratos que encantam o paladar e celebram a arte da culinária. Venha nos visitar e descubra um ambiente acolhedor perfeito para reunir amigos e familiares.</p>
+    </section>
+
+    <section id="servicos" class="container py-5">
+        <h2 class="text-danger">Pratos Mais Pedidos</h2>
+        <table class="table table-bordered">
+            <thead class="table-danger">
+                <tr>
+                    <th class="text-danger">Nome do Serviço</th>
+                    <th class="text-danger">Preço</th>
+                    <th class="text-danger">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-danger">Feijoada Especial</td>
+                    <td class="text-danger">R$ 60,00</td>
+                    <td class="text-danger">Ingredientes: feijão preto, carne de porco, arroz, farofa, couve.</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">Espaguete à Bolonhesa</td>
+                    <td class="text-danger">R$ 55,00</td>
+                    <td class="text-danger">Ingredientes: espaguete, carne moída, molho de tomate, cebola, alho, queijo parmesão.</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">Risoto de Camarão</td>
+                    <td class="text-danger">R$ 80,00</td>
+                    <td class="text-danger">Ingredientes: arroz arbóreo, camarão, vinho branco, queijo parmesão, cebola, manteiga.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cardapio" class="container py-5">
+        <h2 class="text-danger">Cardápio</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/comidas.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Imagem 1">
+                    <div class="card-body">
+                        <button class="btn btn-danger">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/refrigerantes.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Imagem 2">
+                    <div class="card-body">
+                        <button class="btn btn-danger">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/sobremesas-freres-960x540.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Imagem 3">
+                    <div class="card-body">
+                        <button class="btn btn-danger">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="container py-5">
+        <h2 class="text-danger">Contate-nos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+            <button type="reset" class="btn btn-outline-danger">Cancelar</button>
+        </form>
+    </section>
+
+    <footer class="bg-danger text-white py-3">
+        <div class="container d-flex justify-content-between">
+            <div>&copy; 2024 Direitos Reservados.</div>
+            <div>
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
